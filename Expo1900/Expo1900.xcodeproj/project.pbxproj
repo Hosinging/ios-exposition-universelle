@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2BA1BBDE2695722C00DE3842 /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBDD2695722C00DE3842 /* Exposition.swift */; };
 		2BA1BBE02695724100DE3842 /* ExpositionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBDF2695724100DE3842 /* ExpositionItem.swift */; };
+		2BA1BBE626975D7C00DE3842 /* PairJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBE526975D7C00DE3842 /* PairJsonDecoder.swift */; };
+		2BA1BBE92697846500DE3842 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBE82697846500DE3842 /* ListTableViewController.swift */; };
+		2BA1BBEE26978B5F00DE3842 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBED26978B5F00DE3842 /* ListTableViewCell.swift */; };
+		2BA1BBF02697C29700DE3842 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBEF2697C29700DE3842 /* ItemTableViewController.swift */; };
+		2BA1BBF22697C7F600DE3842 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1BBF12697C7F600DE3842 /* ItemTableViewCell.swift */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
 		C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B62589F401005FB0FD /* SceneDelegate.swift */; };
 		C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 /* Begin PBXFileReference section */
 		2BA1BBDD2695722C00DE3842 /* Exposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposition.swift; sourceTree = "<group>"; };
 		2BA1BBDF2695724100DE3842 /* ExpositionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionItem.swift; sourceTree = "<group>"; };
+		2BA1BBE526975D7C00DE3842 /* PairJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairJsonDecoder.swift; sourceTree = "<group>"; };
+		2BA1BBE82697846500DE3842 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		2BA1BBED26978B5F00DE3842 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		2BA1BBEF2697C29700DE3842 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		2BA1BBF12697C7F600DE3842 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79FF4B42589F401005FB0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79FF4B62589F401005FB0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +60,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2BA1BBE126975CD500DE3842 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1BBEA2697898A00DE3842 /* Cell */,
+				C79FF4BA2589F401005FB0FD /* Main.storyboard */,
+				C79FF4BF2589F404005FB0FD /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA1BBE226975CEA00DE3842 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C79FF4B82589F401005FB0FD /* ViewController.swift */,
+				2BA1BBE82697846500DE3842 /* ListTableViewController.swift */,
+				2BA1BBEF2697C29700DE3842 /* ItemTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2BA1BBE426975D5300DE3842 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1BBE526975D7C00DE3842 /* PairJsonDecoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		2BA1BBEA2697898A00DE3842 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1BBED26978B5F00DE3842 /* ListTableViewCell.swift */,
+				2BA1BBF12697C7F600DE3842 /* ItemTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C79FF4A82589F401005FB0FD = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +116,13 @@
 		C79FF4B32589F401005FB0FD /* Expo1900 */ = {
 			isa = PBXGroup;
 			children = (
-				2BA1BBDC2695721800DE3842 /* Model */,
 				C79FF4B42589F401005FB0FD /* AppDelegate.swift */,
 				C79FF4B62589F401005FB0FD /* SceneDelegate.swift */,
-				C79FF4B82589F401005FB0FD /* ViewController.swift */,
-				C79FF4BA2589F401005FB0FD /* Main.storyboard */,
 				C79FF4BD2589F404005FB0FD /* Assets.xcassets */,
-				C79FF4BF2589F404005FB0FD /* LaunchScreen.storyboard */,
+				2BA1BBE426975D5300DE3842 /* Decoder */,
+				2BA1BBE226975CEA00DE3842 /* Controller */,
+				2BA1BBE126975CD500DE3842 /* View */,
+				2BA1BBDC2695721800DE3842 /* Model */,
 				C79FF4C22589F404005FB0FD /* Info.plist */,
 			);
 			path = Expo1900;
@@ -152,10 +199,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA1BBE02695724100DE3842 /* ExpositionItem.swift in Sources */,
+				2BA1BBF02697C29700DE3842 /* ItemTableViewController.swift in Sources */,
+				2BA1BBF22697C7F600DE3842 /* ItemTableViewCell.swift in Sources */,
+				2BA1BBEE26978B5F00DE3842 /* ListTableViewCell.swift in Sources */,
 				C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */,
 				2BA1BBDE2695722C00DE3842 /* Exposition.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
+				2BA1BBE626975D7C00DE3842 /* PairJsonDecoder.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
+				2BA1BBE92697846500DE3842 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
